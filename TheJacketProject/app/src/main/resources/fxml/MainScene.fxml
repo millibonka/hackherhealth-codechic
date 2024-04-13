@@ -40,43 +40,47 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thejacketproject.Controller.MainSceneController">
+<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thejacketproject.controller.MainSceneController">
    <center>
-      <AnchorPane fx:id="mainAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <Pane fx:id="buttonPane" layoutY="547.0" prefHeight="55.0" prefWidth="335.0" style="-fx-background-color: #4358a8;">
+      <BorderPane fx:id="mainPane" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane fx:id="mainAnchorPane" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Button layoutX="27.0" layoutY="13.0" minWidth="30.0" mnemonicParsing="false" onAction="#goHome" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/home_icon.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="userButton" layoutX="252.0" layoutY="13.0" minWidth="39.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/user_icon.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="closetButton" layoutX="141.0" layoutY="13.0" minWidth="39.0" mnemonicParsing="false" onAction="#displayCloset" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/hanger_icon.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
+                  <Pane fx:id="buttonPane" layoutY="547.0" prefHeight="55.0" prefWidth="335.0" style="-fx-background-color: #4358a8;">
+                     <children>
+                        <Button fx:id="homeButton" layoutX="27.0" layoutY="13.0" minWidth="30.0" mnemonicParsing="false" onAction="#goHome" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/home_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="userButton" layoutX="252.0" layoutY="13.0" minWidth="39.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/user_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="closetButton" layoutX="141.0" layoutY="13.0" minWidth="39.0" mnemonicParsing="false" onAction="#displayCloset" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/hanger_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="standInPane" prefHeight="547.0" prefWidth="335.0" />
                </children>
-            </Pane>
-            <Pane fx:id="standInPane" prefHeight="547.0" prefWidth="335.0" />
-         </children>
-      </AnchorPane>
+            </AnchorPane>
+         </center>
+      </BorderPane>
    </center>
 </View>

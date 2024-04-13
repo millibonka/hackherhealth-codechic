@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thejacketproject.controller.OutdoorActivitiesController">
    <children>
       <Pane prefHeight="600.0" prefWidth="335.0">
          <children>
@@ -61,6 +61,11 @@
                   <Font name="Candara" size="18.0" />
                </font>
             </Label>
+            <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="286.0" layoutY="538.0">
+               <image>
+                  <Image url="@../images/question.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>
