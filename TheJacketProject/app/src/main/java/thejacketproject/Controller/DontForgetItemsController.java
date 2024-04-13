@@ -1,15 +1,20 @@
+package thejacketproject.controller;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class PleaseProvideControllerClassName {
+/**
+ * Controls the items no tobe forgotten.
+ */
+public class DontForgetItemsController {
 
-    @FXML
-    private Button backButton;
+  @FXML
+  private Button backButton;
 
-    @FXML
-    void goHome(ActionEvent event) {
+  @FXML
+  void goHome(ActionEvent event) {
 
-    }
+  }
 
 }

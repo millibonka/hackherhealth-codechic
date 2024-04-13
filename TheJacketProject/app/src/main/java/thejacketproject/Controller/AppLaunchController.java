@@ -1,4 +1,4 @@
-package thejacketproject.Controller;
+package thejacketproject.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

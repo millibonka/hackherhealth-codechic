@@ -1,4 +1,8 @@
+package thejacketproject.controller;
 
-public class PleaseProvideControllerClassName {
+/**
+* Control the closet fxml.
+*/
+public class ClosetController {
 
 }
