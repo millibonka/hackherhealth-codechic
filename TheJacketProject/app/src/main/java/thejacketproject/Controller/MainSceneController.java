@@ -47,4 +47,8 @@ public class MainSceneController {
 
   }
 
+  public void switchPane(Pane newPane) {
+    
+  }
+
 }
