@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thejacketproject.controller.OutdoorActivitiesController">
    <children>
       <Pane prefHeight="600.0" prefWidth="335.0">
@@ -24,7 +23,7 @@
                      <graphic>
                         <ImageView fitHeight="28.0" fitWidth="28.0">
                            <image>
-                              <Image url="@../images/back.png" />
+                              <Image url="@images/back.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -33,17 +32,17 @@
             </Pane>
             <ImageView fitHeight="122.0" fitWidth="115.0" layoutX="46.0" layoutY="81.0">
                <image>
-                  <Image url="@../images/hiking.png" />
+                  <Image url="@images/hiking.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="122.0" fitWidth="115.0" layoutX="46.0" layoutY="443.0">
                <image>
-                  <Image url="@../images/bicycle.png" />
+                  <Image url="@images/bicycle.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="101.0" fitWidth="102.0" layoutX="179.0" layoutY="277.0">
                <image>
-                  <Image url="@../images/picnic-basket.png" />
+                  <Image url="@images/picnic-basket.png" />
                </image>
             </ImageView>
             <Label layoutX="199.0" layoutY="128.0" prefHeight="28.0" prefWidth="62.0" text="Hiking">
@@ -63,7 +62,7 @@
             </Label>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="286.0" layoutY="538.0">
                <image>
-                  <Image url="@../images/question.png" />
+                  <Image url="@images/question.png" />
                </image>
             </ImageView>
          </children>

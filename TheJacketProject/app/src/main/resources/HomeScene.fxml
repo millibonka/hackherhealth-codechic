@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thejacketproject.controller.HomeSceneController">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="335.0">
@@ -22,7 +21,7 @@
                   </Label>
                   <ImageView fitHeight="63.0" fitWidth="65.0" layoutX="19.0" layoutY="42.0">
                      <image>
-                        <Image url="@../images/hot_sun_icon.png" />
+                        <Image url="@images/hot_sun_icon.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="locationLabel1" layoutX="94.0" layoutY="47.0" prefHeight="40.0" prefWidth="83.0" text="14°C">
@@ -36,7 +35,7 @@
                <graphic>
                   <ImageView>
                      <image>
-                        <Image url="@../images/location_icon.png" />
+                        <Image url="@images/location_icon%20-%20Copy.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -45,7 +44,7 @@
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="30.0">
                      <image>
-                        <Image url="@../images/logout.png" />
+                        <Image url="@images/logout.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -60,7 +59,7 @@
                <graphic>
                   <ImageView fitHeight="45.0" fitWidth="48.0">
                      <image>
-                        <Image url="@../images/get-dressed.png" />
+                        <Image url="@images/get-dressed.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -69,7 +68,7 @@
                <graphic>
                   <ImageView fitHeight="51.0" fitWidth="53.0">
                      <image>
-                        <Image url="@../images/lightbulb.png" />
+                        <Image url="@images/lightbulb.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -79,7 +78,7 @@
             </Button>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="278.0" layoutY="488.0">
                <image>
-                  <Image url="@../images/question.png" />
+                  <Image url="@images/question.png" />
                </image>
             </ImageView>
          </children>

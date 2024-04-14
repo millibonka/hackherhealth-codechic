@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane layoutY="-11.0" prefHeight="51.0" prefWidth="335.0" style="-fx-background-color: #d9d9d9;">
@@ -22,7 +21,7 @@
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="28.0">
                      <image>
-                        <Image url="@../images/back.png" />
+                        <Image url="@images/back.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -35,62 +34,62 @@
                <children>
                   <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="9.0" layoutY="6.0">
                      <image>
-                        <Image url="@../images/tshirt.png" />
+                        <Image url="@images/tshirt.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="72.0" layoutY="39.0">
                <image>
-                  <Image url="@../images/left.png" />
+                  <Image url="@images/left.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="219.0" layoutY="39.0">
                <image>
-                  <Image url="@../images/right.png" />
+                  <Image url="@images/right.png" />
                </image>
             </ImageView>
             <Pane layoutX="132.0" layoutY="135.0" prefHeight="74.0" prefWidth="72.0" style="-fx-border-color: black;">
                <children>
                   <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="9.0" layoutY="14.0">
                      <image>
-                        <Image url="@../images/skirt.png" />
+                        <Image url="@images/skirt.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="72.0" layoutY="151.0">
                <image>
-                  <Image url="@../images/left.png" />
+                  <Image url="@images/left.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="219.0" layoutY="151.0">
                <image>
-                  <Image url="@../images/right.png" />
+                  <Image url="@images/right.png" />
                </image>
             </ImageView>
             <Pane layoutX="129.0" layoutY="260.0" prefHeight="74.0" prefWidth="72.0" style="-fx-border-color: black;">
                <children>
                   <ImageView fitHeight="51.0" fitWidth="44.0" layoutX="15.0" layoutY="14.0">
                      <image>
-                        <Image url="@../images/sandals.png" />
+                        <Image url="@images/sandals.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="72.0" layoutY="274.0">
                <image>
-                  <Image url="@../images/left.png" />
+                  <Image url="@images/left.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="219.0" layoutY="278.0">
                <image>
-                  <Image url="@../images/right.png" />
+                  <Image url="@images/right.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="282.0" layoutY="439.0">
                <image>
-                  <Image url="@../images/question.png" />
+                  <Image url="@images/question.png" />
                </image>
             </ImageView>
             <Label layoutX="145.0" layoutY="3.0" prefHeight="22.0" prefWidth="46.0" text="Tops">
@@ -112,19 +111,19 @@
                <children>
                   <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="9.0" layoutY="12.0">
                      <image>
-                        <Image url="@../images/light_jacket.png" />
+                        <Image url="@images/light_jacket.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="72.0" layoutY="391.0">
                <image>
-                  <Image url="@../images/left.png" />
+                  <Image url="@images/left.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="219.0" layoutY="395.0">
                <image>
-                  <Image url="@../images/right.png" />
+                  <Image url="@images/right.png" />
                </image>
             </ImageView>
             <Label layoutX="118.0" layoutY="349.0" prefHeight="28.0" prefWidth="103.0" text="Outter Wear">

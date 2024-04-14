@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="package thejacketproject.controller.GettingDressedController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thejacketproject.controller.DontForgetItemsController">
    <children>
       <Pane prefHeight="51.0" prefWidth="335.0" style="-fx-background-color: #d9d9d9;">
          <children>
@@ -24,7 +23,7 @@
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="28.0">
                      <image>
-                        <Image url="@../images/back.png" />
+                        <Image url="@images/back.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -35,7 +34,7 @@
          <children>
             <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="282.0" layoutY="440.0">
                <image>
-                  <Image url="@../images/question.png" />
+                  <Image url="@images/question.png" />
                </image>
             </ImageView>
             <CheckBox layoutX="27.0" layoutY="72.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="124.0" text="House Keys">
