@@ -26,7 +26,8 @@ public class AppLaunchController {
   void openHome(ActionEvent event) throws Exception  {
 
     // Load the FXML file
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainScene.fxml"));
+    
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScene.fxml"));
     Parent root = loader.load();
 
     // Get the controller instance

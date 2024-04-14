@@ -8,7 +8,7 @@ import javafx.util.Pair;
 /**
  * Class to load fxml file scenes in another scene.
  */
-public class FxmlLoader {
+public class FxmlFileLoader {
   private AnchorPane view;
 
   /**
@@ -21,15 +21,18 @@ public class FxmlLoader {
     FXMLLoader loader = new FXMLLoader();
     try {
       URL fileUrl = getClass().getClassLoader().getResource(fileName + ".fxml");
+      System.out.println(fileUrl);
       if (fileUrl == null) {
+        System.err.println("Resource not found: " + fileName);
         throw new java.io.FileNotFoundException("FXML file cannot be found!");
       }
+      System.out.println("Resolved resource path: " + fileUrl.getPath());
       loader.setLocation(fileUrl);
       view = loader.load();
 
     } catch (Exception e) {
       System.out.println("No page " + fileName + " found! Check FxmlLoader!");
-      e.printStackTrace();
+      
     }
 
     Object controller = loader.getController();

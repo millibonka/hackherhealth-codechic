@@ -18,7 +18,8 @@ public class App extends Application {
   public void start(Stage primaryStage) throws Exception {
 
     // Load the FXML file
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/LaunchScene.fxml"));
+    FXMLLoader loader = new FXMLLoader(
+          getClass().getResource("/LaunchScene.fxml"));
     Parent root = loader.load();
 
     // Get the controller instance
@@ -26,7 +27,7 @@ public class App extends Application {
     controller.setPrimaryStage(primaryStage);
 
     // Set up the primary stage
-    primaryStage.setTitle("The Jacket Project");
+    primaryStage.setTitle("Jackie");
     primaryStage.setScene(new Scene(root, 335, 600));
 
     String  iconPath = "file:src/main/resources/images/jacket_icon.png";

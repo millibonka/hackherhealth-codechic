@@ -5,11 +5,22 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 /**
- * Controls the home screen.
+ * COntrolls the home scene.
  */
 public class HomeSceneController {
+  private MainSceneController parent;
+  private Stage primaryStage;
+
+  public void setParent(MainSceneController parent) {
+    this.parent = parent;
+  }
+
+  public void setPrimaryStage(Stage primaryStage) {
+    this.primaryStage = primaryStage;
+  }
 
   @FXML
   private Button getDressedButton;
