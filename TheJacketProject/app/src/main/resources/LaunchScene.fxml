@@ -49,10 +49,10 @@
                <children>
                   <ImageView fitHeight="535.0" fitWidth="363.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/open_screen_graphic.png" />
+                        <Image url="@images/The%20Jacket%20Project.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="getDressed" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="534.0" mnemonicParsing="false" onAction="#openHome" prefHeight="30.0" prefWidth="112.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: #4358a8;" text="Get Dressed" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="getDressed" alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="534.0" mnemonicParsing="false" onAction="#openHome" prefHeight="30.0" prefWidth="168.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: #4358a8;" text="Weather Proof Your day " textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="12.0" />
                      </font></Button>

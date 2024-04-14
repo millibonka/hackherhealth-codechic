@@ -128,7 +128,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="267.0" prefHeight="28.0" prefWidth="95.0" text="Outter Wear">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="267.0" prefHeight="28.0" prefWidth="95.0" text="Outerwear">
                      <font>
                         <Font name="Candara" size="16.0" />
                      </font>
