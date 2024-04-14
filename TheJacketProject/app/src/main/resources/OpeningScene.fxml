@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane fx:id="mainAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="buttonPane" layoutY="547.0" prefHeight="55.0" prefWidth="342.0" style="-fx-background-color: #4358a8;">
+               <children>
+                  <Button layoutX="27.0" layoutY="13.0" minWidth="30.0" mnemonicParsing="false" onAction="#goHome" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="userButton" layoutX="252.0" layoutY="13.0" minWidth="39.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/user_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="closetButton" layoutX="141.0" layoutY="13.0" minWidth="39.0" mnemonicParsing="false" onAction="#displayCloset" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #4358a8;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/hanger_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="4.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="335.0">
+               <children>
+                  <Pane fx:id="weatherConditionsPane" layoutX="14.0" layoutY="14.0" prefHeight="112.0" prefWidth="307.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                     <children>
+                        <Label fx:id="locationLabel" layoutX="20.0" layoutY="2.0" prefHeight="25.0" prefWidth="203.0" text="Växjö, Sweden" />
+                        <ImageView fx:id="weatherConditionImage1" fitHeight="47.0" fitWidth="54.0" layoutX="95.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/cloudy_icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="weatherConditionImage2" fitHeight="36.0" fitWidth="54.0" layoutX="118.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/unknown_weather_icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="weatherConditionImage3" fitHeight="36.0" fitWidth="54.0" layoutX="219.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/unknown_weather_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="weatherConditionText1" alignment="CENTER" layoutX="12.0" layoutY="67.0" prefHeight="38.0" prefWidth="65.0" text="Heavy Rain" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="weatherConditionText3" alignment="CENTER" layoutX="169.0" layoutY="68.0" prefHeight="37.0" prefWidth="73.0" text="Strong Wind" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="weatherConditionText2" alignment="CENTER" layoutX="89.0" layoutY="77.0" prefHeight="17.0" prefWidth="65.0" text="Cloudy" textAlignment="CENTER">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <ImageView layoutX="20.0" layoutY="30.0">
+                           <image>
+                              <Image url="@../images/heavy_rain_icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView layoutX="172.0" layoutY="32.0">
+                           <image>
+                              <Image url="@../images/windy_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="135.0" prefHeight="95.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                     <children>
+                        <TextField alignment="CENTER" layoutX="99.0" layoutY="1.0" prefHeight="26.0" prefWidth="103.0" text="Staying indoors" />
+                        <ImageView fitHeight="37.0" fitWidth="40.0" layoutX="14.0" layoutY="37.0">
+                           <image>
+                              <Image url="@../images/clothes.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="71.0" layoutY="36.0">
+                           <image>
+                              <Image url="@../images/trouser.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="123.0" layoutY="39.0">
+                           <image>
+                              <Image url="@../images/socks.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="230.0" layoutY="2.0">
+                           <image>
+                              <Image url="@../images/speaker_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="240.0" prefHeight="155.0" prefWidth="306.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                     <children>
+                        <TextField alignment="CENTER" layoutX="103.0" layoutY="1.0" prefHeight="0.0" prefWidth="109.0" text="Heading Outside" />
+                        <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="191.0" layoutY="97.0">
+                           <image>
+                              <Image url="@../images/raincoat.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="32.0" layoutY="95.0">
+                           <image>
+                              <Image url="@../images/boots.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="132.0" layoutY="43.0">
+                           <image>
+                              <Image url="@../images/pants.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="79.0" layoutY="41.0">
+                           <image>
+                              <Image url="@../images/long-skirt.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="136.0" layoutY="97.0">
+                           <image>
+                              <Image url="@../images/umbrella.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="35.0" layoutY="41.0">
+                           <image>
+                              <Image url="@../images/clothes.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="81.0" layoutY="91.0">
+                           <image>
+                              <Image url="@../images/sneakers.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="39.0" layoutX="189.0" layoutY="44.0">
+                           <image>
+                              <Image url="@../images/socks.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="228.0" layoutY="6.0">
+                           <image>
+                              <Image url="@../images/speaker_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="23.0" layoutY="408.0" prefHeight="95.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                     <children>
+                        <TextField alignment="CENTER" layoutX="99.0" layoutY="1.0" prefHeight="26.0" prefWidth="103.0" text="Don't Forget" />
+                        <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="230.0" layoutY="2.0">
+                           <image>
+                              <Image url="@../images/speaker_icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="119.0" layoutY="42.0">
+                           <image>
+                              <Image url="@../images/fidget-spinner.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="18.0" layoutY="40.0">
+                           <image>
+                              <Image url="@../images/smartphone.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="42.0" layoutX="67.0" layoutY="37.0">
+                           <image>
+                              <Image url="@../images/key-chain.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="167.0" layoutY="45.0">
+                           <image>
+                              <Image url="@../images/wallet.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</View>
