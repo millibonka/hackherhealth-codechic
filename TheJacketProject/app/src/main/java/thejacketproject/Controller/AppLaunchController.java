@@ -26,16 +26,23 @@ public class AppLaunchController {
   void openHome(ActionEvent event) throws Exception  {
 
     // Load the FXML file
+    try {
+      FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScene.fxml"));
+
+      Parent root = loader.load();
+
+      // Get the controller instance
+      MainSceneController controller = loader.getController();
+      controller.setPrimaryStage(primaryStage);
+
+      Scene newScene = new Scene(root);
+      primaryStage.setScene(newScene);
+      
+    } catch (Exception e) {
+      System.err.println("Resources incorrectly loaded");
+    }
     
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScene.fxml"));
-    Parent root = loader.load();
-
-    // Get the controller instance
-    MainSceneController controller = loader.getController();
-    controller.setPrimaryStage(primaryStage);
-
-    Scene newScene = new Scene(root);
-    primaryStage.setScene(newScene);
+    
 
   }
 
